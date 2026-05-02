@@ -174,7 +174,9 @@ const cadProjects: CADProject[] = [
 
 const skills = [
   { category: "Programming Languages", items: ["C/C++", "Python", "SystemVerilog/Verilog", "RISC-V/MIPS/AVR Assembly"] },
-  { category: "Methodologies", items: ["Algorithms", "Digital/Analog Circuits", "FPGA", "Microcontrollers", "Git", "UART", "ADC", "I2C", "Linux OS"] },
+  { category: "Methodologies", items: ["Algorithms", "Digital/Analog Circuits", "FPGA", "Microcontrollers", "Git", "ADC", "Linux OS"] },
+  { category: "Protocols", items: ["I2C", "SPI", "UART", "USB"] },
+  { category: "Hardware", items: ["Raspberry Pi", "ESP-32", "AVR/ATmega (Arduino)"] },
   { category: "Software Tools", items: ["ModelSim", "Quartus II", "LTSpice", "Arduino IDE", "VS Code", "Microchip Studio", "Fusion 360", "KiCad"] },
 ];
 
