@@ -19,149 +19,102 @@ import { useEmailObfuscation } from '../hooks/useEmailObfuscation';
 import { Project } from '../components/ui/ProjectCard';
 
 const user = {
-  name: "Marc Dy",
-  title: "Software Developer",
-  bio: "I'm driven by the process of turning creative ideas into functional code. Whether it's developing a tool for a gaming community or building a full-fledged web application, I love bringing concepts to life through software.",
-  // Email obfuscated - will be decoded client-side
-  email: { encoded: "ZHltYXJjY2FybG9AeWFob28uY29t", domain: "yahoo.com" },
+  name: "Issa Alkhoury",
+  title: "Computer Engineer",
+  bio: "",
+  email: { encoded: "aXNzYWFsa2hvdXJ5MDVAZ21haWwuY29t", domain: "gmail.com" },
   social: {
-    github: "https://github.com/decentaro",
-    linkedin: "#",
+    github: "https://github.com/busyissa",
+    linkedin: "https://www.linkedin.com/in/issaalkhoury/",
     twitter: "#"
   }
 };
 
 const projects: Project[] = [
   {
-    id: 5,
-    title: "BMS POS System",
-    shortDesc: "Desktop POS & Inventory Management",
-    description: "A comprehensive, full-stack Point-of-Sale (POS) system with advanced inventory, sales, and employee management features, built with Electron and .NET 8.",
-    detailedDescription: "A robust, cross-platform desktop application designed for small businesses, offering a complete Point-of-Sale (POS) solution. Key features include real-time sales processing, detailed sales history with receipt reprint capabilities, and efficient returns management. It boasts both basic and advanced inventory management, handling expired and damaged goods. The system also includes comprehensive system and tax settings, audit trail logs for accountability, and full employee management functionalities, among many other advanced features. The frontend is built with React/Vite inside an Electron container, utilizing shadcn/ui for components. The backend is a powerful .NET 8 API connected to a Supabase (Postgres) database for all data management.",
-    technologies: ["Electron.js", "React", "Vite", ".NET 8", "C#", "Supabase", "PostgreSQL", "TailwindCSS"],
-    techStack: [
-      { name: "Electron.js", color: "gray" },
-      { name: "React", color: "cyan" },
-      { name: ".NET 8", color: "purple" },
-      { name: "Supabase", color: "green" },
-    ],
-    github: "https://github.com/decentaro/BMS-Point-of-Sale-System",
-    demo: undefined,
-    image: "/api/placeholder/600/400",
-    status: "In Development",
-    type: "Desktop Application",
-    featured: true,
-    year: "2025-Present"
-  },
-  {
-    id: 6,
-    title: "portndock",
-    shortDesc: "Python CLI for managing local dev environments",
-    description: "A command-line tool to view active ports, manage Docker containers, and get a quick overview of your local development environment.",
-    detailedDescription: "A Python-based utility providing a Textual User Interface (TUI) to display currently used ports and running Docker containers. Allows for quick actions like stopping containers and refreshing the view, streamlining the local development workflow.",
-    technologies: ["Python", "CLI", "TUI", "Docker API", "Developer Tool"],
-    techStack: [
-      { name: "Python", color: "blue" },
-      { name: "CLI Tool", color: "gray" },
-    ],
-    github: "https://github.com/decentaro/portndock",
-    demo: "https://pypi.org/project/portndock/",
-    image: "/api/placeholder/600/400",
-    status: "Live",
-    type: "CLI Tool",
-    featured: true,
-    year: "2025-Present"
-  },
-  {
     id: 1,
-    title: "TCGNode",
-    shortDesc: "Trading Card Price Comparison Tool",
-    description: "Web application helping TCG enthusiasts compare Pokémon and One Piece card prices across multiple platforms with real-time data from TCGPlayer and OPTCG APIs.",
-    detailedDescription: "A price tracking platform that fetches card prices from multiple TCG marketplaces via external APIs. Features real-time price monitoring and basic filtering options to help users compare card prices across different platforms.",
-    technologies: ["React", "TailwindCSS", "shadcn/ui", "FastAPI", "API Integration", "Web Scraping"],
+    title: "HotelGuard",
+    shortDesc: "AI-Powered Hotel Risk Monitoring",
+    description: "A hotel risk-monitoring dashboard integrating operational webhook events, computer vision frame analysis, and AI-powered risk scoring via Google Gemini.",
+    detailedDescription: "Built at RebelHacks 2026, HotelGuard analyzes video feeds using Gemini AI and surfaces alerts through a real-time Next.js dashboard without relying on identity data. Features include operational event ingestion from property management systems, computer vision frame analysis with YOLO-based people tracking, room-level risk scoring, and real-time alerts — all metadata-focused for privacy.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Python", "Google Gemini", "YOLO", "Computer Vision"],
     techStack: [
-      { name: "React", color: "cyan" },
-      { name: "TailwindCSS", color: "blue" },
-      { name: "shadcn/ui", color: "purple" },
-      { name: "FastAPI", color: "green" },
-      { name: "API Integration", color: "orange" },
-      { name: "Web Scraping", color: "yellow" }
+      { name: "Next.js", color: "cyan" },
+      { name: "Supabase", color: "green" },
+      { name: "Python", color: "blue" },
+      { name: "Gemini AI", color: "purple" },
     ],
-    github: undefined, // Private repo
-    demo: "https://www.tcgnode.com",
-    image: "/api/placeholder/600/400",
-    status: "Live",
-    type: "Web Application",
-    featured: true,
-    users: "20-50 active users",
-    year: "2025-Present"
-  },
-  {
-    id: 3,
-    title: "Smart Scalp Massager",
-    shortDesc: "IoT Hardware Project",
-    description: "DIY ESP32-based remote-controlled scalp massager combining hardware engineering with software control for a personalized wellness device.",
-    detailedDescription: "IoT device featuring custom 3D-printed chassis, ESP32 microcontroller programming, and wireless control interface. Includes web app integration for remote operation and customizable massage patterns.",
-    technologies: ["ESP32", "C++", "IoT", "Hardware", "Django", "Bootstrap"],
-    techStack: [
-      { name: "ESP32", color: "orange" },
-      { name: "C++", color: "blue" },
-      { name: "IoT", color: "green" },
-      { name: "Hardware", color: "gray" },
-      { name: "Django", color: "green" },
-      { name: "Bootstrap", color: "purple" }
-    ],
-    github: "https://github.com/decentaro/Scalp-Massager",
-    demo: undefined,
+    github: "https://github.com/randyp2/2026-rebelhacks-project",
+    demo: "https://hotelguard.vercel.app",
     image: "/api/placeholder/600/400",
     status: "Completed",
-    type: "Hardware",
+    type: "Web Application",
     featured: true,
-    year: "2023"
+    year: "2026"
   },
   {
     id: 2,
-    title: "MVP Tracker Discord Bot",
-    shortDesc: "Ragnarok Online Gaming Bot",
-    description: "Discord bot designed for Ragnarok Online players to track MVP (boss) spawns and timers to enhance gaming coordination.",
-    detailedDescription: "Discord bot with MVP tracking functionality and custom commands. Features spawn timer tracking and basic user preferences to help Ragnarok Online players coordinate boss hunts.",
-    technologies: ["Discord.js", "JavaScript", "Bot Development", "Gaming"],
+    title: "16-bit Pipelined Processor",
+    shortDesc: "Custom RISC CPU in Verilog",
+    description: "A 16-bit RISC-style CPU implemented in Verilog featuring a 5-stage pipeline architecture with forwarding and hazard handling mechanisms.",
+    detailedDescription: "A fully pipelined processor with IF, ID, EX, MEM, and WB stages. Supports R-type operations (ADD, SUB, AND, OR), memory operations (LW, SW), and branch operations (BEQ, BNE). Features a 4-register file with r0 hardwired to 0, 16-bit instruction format with 6-bit immediate field, load-use stall detection, branch flush mechanisms, and EX stage forwarding from MEM/WB pipeline stages. Compatible with Icarus Verilog, ModelSim, and Questa.",
+    technologies: ["Verilog", "FPGA", "CPU Architecture", "Digital Design", "Pipelining"],
     techStack: [
-      { name: "Discord.js", color: "indigo" },
-      { name: "JavaScript", color: "yellow" },
-      { name: "Bot Development", color: "cyan" },
-      { name: "Gaming", color: "red" }
+      { name: "Verilog", color: "orange" },
+      { name: "FPGA", color: "blue" },
+      { name: "CPU Design", color: "red" },
+      { name: "Digital Logic", color: "gray" },
     ],
-    github: "https://github.com/decentaro/DiscordBOT-MVPList-",
+    github: "https://github.com/busyissa/Custom-16-bit-Pipelined-processor",
     demo: undefined,
     image: "/api/placeholder/600/400",
     status: "Completed",
-    type: "Discord Bot",
+    type: "Hardware Design",
     featured: true,
-    year: "2023"
+    year: "2025"
+  },
+  {
+    id: 3,
+    title: "Smart Heart Rate Watch",
+    shortDesc: "Wearable Health Monitor",
+    description: "A wearable heart rate monitoring system built on an ATmega328P that detects pulse signals, calculates BPM, and alerts users to potential POTS episodes.",
+    detailedDescription: "Real-time heart rate monitoring using an analog pulse sensor and ADC with BPM calculation over 10-second sampling windows. Features an SSD1306 OLED display with startup bitmap and live BPM readout, POTS detection with age-based configurable thresholds, piezo buzzer and flashing LED alerts, two-button menu navigation, and UART serial output for debugging.",
+    technologies: ["C", "ATmega328P", "I2C", "UART", "OLED", "Embedded Systems"],
+    techStack: [
+      { name: "C", color: "blue" },
+      { name: "ATmega328P", color: "green" },
+      { name: "Embedded", color: "orange" },
+      { name: "Hardware", color: "gray" },
+    ],
+    github: "https://github.com/busyissa/Smart-Heart-Rate-Watch-System",
+    demo: undefined,
+    image: "/api/placeholder/600/400",
+    status: "Completed",
+    type: "Embedded System",
+    featured: true,
+    year: "2025"
   },
   {
     id: 4,
-    title: "Data Collection System",
-    shortDesc: "Django Web Application",
-    description: "Django-based web application for workplace data error management, streamlining data collection and validation processes.",
-    detailedDescription: "Simple data management platform built with Django. Features basic user authentication, form-based data collection, and reporting functionality to help manage workplace data entry and validation.",
-    technologies: ["Django", "Python", "Data Management", "Web App", "Bootstrap"],
+    title: "DES Encryption on FPGA",
+    shortDesc: "Hardware Cryptography Engine",
+    description: "A hardware implementation of the DES encryption algorithm designed for FPGA deployment with FSM control logic and 7-segment display output.",
+    detailedDescription: "Implements a 3-round DES encryption engine on an Altera/Intel DE2-115 board (Cyclone IV FPGA). The system accepts a 64-bit plaintext and key, producing ciphertext through initial permutation, Feistel rounds with S-box substitution, and final permutation. Features an FSM-controlled datapath with an 8-entry 64-bit register file operating through IDLE, EXECUTE, and WRITEBACK states. Built with Quartus Prime.",
+    technologies: ["Verilog", "FPGA", "Cryptography", "DES", "Quartus Prime", "Digital Design"],
     techStack: [
-      { name: "Django", color: "green" },
-      { name: "Python", color: "blue" },
-      { name: "Data Management", color: "purple" },
-      { name: "Web App", color: "cyan" },
-      { name: "Bootstrap", color: "purple" }
+      { name: "Verilog", color: "orange" },
+      { name: "FPGA", color: "blue" },
+      { name: "Cryptography", color: "red" },
+      { name: "Quartus", color: "purple" },
     ],
-    github: "https://github.com/decentaro/DataCollectionForWork",
-    demo: "https://finaltechs.pythonanywhere.com/tek84Troubleshoot/",
+    github: "https://github.com/busyissa/DES-Encryption-Algorithm-for-Enhanced-Data-Security-on-FPGA",
+    demo: undefined,
     image: "/api/placeholder/600/400",
-    status: "Live",
-    type: "Web Application",
+    status: "Completed",
+    type: "Hardware Design",
     featured: true,
-    year: "2022"
-  }
+    year: "2025"
+  },
 ];
 
 const cadProjects: CADProject[] = [
@@ -288,10 +241,10 @@ export default function Portfolio() {
       <footer className="border-t border-slate-700/40 py-10 px-4" style={{ background: '#0a0f1a' }}>
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-600 text-xs font-mono">
-            © 2026 Marc Dy. All rights reserved.
+            © 2026 Issa Alkhoury. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a href="https://github.com/decentaro" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-cyan-400 text-xs transition-colors">
+            <a href="https://github.com/busyissa" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-cyan-400 text-xs transition-colors">
               GitHub
             </a>
             <a href="#contact" className="text-slate-500 hover:text-cyan-400 text-xs transition-colors">

@@ -123,7 +123,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                 </a>
 
                 <a
-                  href="https://github.com/decentaro"
+                  href="https://github.com/busyissa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 group"
@@ -134,7 +134,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                   <div>
                     <p className="text-xs text-slate-500 mb-0.5">GitHub</p>
                     <p className="text-sm text-slate-300 group-hover:text-cyan-400 transition-colors">
-                      github.com/decentaro
+                      github.com/busyissa
                     </p>
                   </div>
                 </a>
