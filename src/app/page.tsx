@@ -173,12 +173,9 @@ const cadProjects: CADProject[] = [
 ];
 
 const skills = [
-  { category: "Languages", items: ["Python", "JavaScript", "TypeScript", "C#", "C/C++", "SQL", "HTML/CSS"] },
-  { category: "Frontend", items: ["React", "Next.js", "TailwindCSS", "Bootstrap", "shadcn/ui"] },
-  { category: "Backend", items: [".NET", "NestJS", "FastAPI", "Django", "REST APIs"] },
-  { category: "Cloud/Database", items: ["AWS (Lambda, EC2, RDS, SageMaker, DynamoDB)", "Supabase", "PostgreSQL", "MongoDB", "SQLite"] },
-  { category: "Tools", items: ["Git", "GitHub", "Docker", "Vercel", "VS Code", "Jira", "Confluence", "Linux", "Arduino", "Raspberry Pi"] },
-  { category: "AI / LLM", items: ["Hugging Face", "LoRA Fine-tuning", "vLLM", "TurboQuant", "Local LLM", "RAG", "Agents", "Domain Adaptation"] }
+  { category: "Programming Languages", items: ["C/C++", "Python", "SystemVerilog/Verilog", "RISC-V/MIPS/AVR Assembly"] },
+  { category: "Methodologies", items: ["Algorithms", "Digital/Analog Circuits", "FPGA", "Microcontrollers", "Git", "UART", "ADC", "I2C", "Linux OS"] },
+  { category: "Software Tools", items: ["ModelSim", "Quartus II", "LTSpice", "Arduino IDE", "VS Code", "Microchip Studio", "Fusion 360", "KiCad"] },
 ];
 
 export default function Portfolio() {
